@@ -6,7 +6,7 @@
 
 ```bash
 # 1. 全局安装
-npm install -g @neochen/everything-antigravity
+npm install -g @chc880/everything-antigravity
 
 # 2. 进入你的项目，初始化
 cd your-project
