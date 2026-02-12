@@ -1,6 +1,6 @@
 {
   "name": "@chc880/everything-antigravity",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Everything Antigravity — AI 编程最佳实践合集，一键为 Antigravity 配置 Skills/Rules/Workflows",
   "license": "MIT",
   "bin": {
