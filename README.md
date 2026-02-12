@@ -22,6 +22,7 @@ ea init                 # 安装全部到当前项目
 ea init --lang ts       # 仅 TypeScript 规则
 ea init --lang python   # 仅 Python 规则
 ea init --lang golang   # 仅 Go 规则
+ea update               # 更新包并重新安装
 ea status               # 查看安装状态
 ea uninstall            # 卸载（自动备份）
 ea help                 # 帮助

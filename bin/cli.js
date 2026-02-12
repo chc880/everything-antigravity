@@ -6,12 +6,13 @@
  * 用法:
  *   ea init                    # 安装全部到当前项目
  *   ea init --lang typescript  # 仅安装 TypeScript 规则
+ *   ea update                  # 更新包并重新安装
  *   ea status                  # 查看安装状态
  *   ea uninstall               # 卸载（自动备份）
  *   ea help                    # 帮助
  */
 
-const { install, uninstall, status, showHelp } = require('../lib/installer');
+const { install, uninstall, update, status, showHelp } = require('../lib/installer');
 
 const args = process.argv.slice(2);
 const command = args[0] || 'help';
@@ -55,6 +56,14 @@ switch (command) {
   case 'rm':
     uninstall();
     break;
+
+  case 'update':
+  case 'upgrade':
+  case 'u': {
+    const { lang } = parseFlags(restArgs);
+    update(lang);
+    break;
+  }
 
   case 'help':
   case '-h':
